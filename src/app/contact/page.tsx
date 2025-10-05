@@ -1,17 +1,57 @@
-export const metadata = { title: "联系我们 | 东莞创江电子" };
+﻿export const metadata = {
+  title: "Contact | Fastfun Remote",
+  description:
+    "Request a proposal or RF consultation with the Fastfun Remote engineering and manufacturing team.",
+};
+
+const responseHighlights = [
+  "Response within one business day",
+  "NDAs available on request",
+  "Engineering discovery session included",
+];
 
 export default function Page() {
   return (
-    <div className="container py-16">
-      <h1 className="text-3xl font-bold mb-6">联系我们</h1>
-      <div className="rounded-2xl border border-slate-800/60 p-6">
-        <p className="text-slate-300 mb-3">告诉我们你的项目需求（功能、尺寸、供电、认证地区等），我们会在 1 个工作日内回复。</p>
-        <div className="text-slate-400 text-sm space-y-1">
-          <div>Email：<a className="underline" href="mailto:sales@example.com">sales@example.com</a></div>
-          <div>WhatsApp/WeChat：请邮件留下联系方式，我们主动添加</div>
-          <div>地址：东莞 · 中国</div>
+    <div className="container space-y-10 py-16">
+      <header className="max-w-2xl space-y-4">
+        <span className="badge">Let's collaborate</span>
+        <h1 className="section-title">Start your RF control project with Fastfun Remote</h1>
+        <p className="section-copy">
+          Tell us about your product vision, target markets, annual volume, and any required certifications. We'll assemble the right engineering leads and craft a concrete launch plan.
+        </p>
+      </header>
+
+      <section className="card grid gap-8 md:grid-cols-[1.5fr_1fr]">
+        <div className="space-y-4">
+          <h2 className="text-lg font-semibold text-white">Share your brief</h2>
+          <p className="text-sm text-slate-200/90">
+            Email us and include sketches, requirement docs, or performance benchmarks. The more context we have, the sharper our recommendations.
+          </p>
+          <a className="btn inline-flex" href="mailto:eric@fastfunrc.com">
+            eric@fastfunrc.com
+          </a>
         </div>
-      </div>
+        <ul className="space-y-3 text-sm text-slate-200/90">
+          {responseHighlights.map((item) => (
+            <li key={item} className="flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-cyan-300" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="card space-y-4">
+        <h2 className="text-lg font-semibold text-white">Office & Manufacturing</h2>
+        <div className="text-sm text-slate-200/90">
+          <p>Fastfun Remote · Dongguan, Guangdong, China</p>
+          <p className="mt-2">
+            We ship globally and partner with accredited testing labs across North America, Europe, and APAC to streamline compliance.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
+
+
