@@ -92,7 +92,7 @@ const groups: ProductGroup[] = [
           "Robust enclosures and redundant connectivity for factories, warehousing, and smart agriculture.",
         bullets: [
           "Edge processing with secure MQTT / HTTPS",
-          "-30°C to 70°C operation with conformal coating",
+          "-30C to 70C operation with conformal coating",
           "Support for LoRa, NB-IoT, and private LTE",
         ],
       },
@@ -140,6 +140,7 @@ export default function Page() {
     </div>
   );
 }
+
 
 
 

@@ -44,7 +44,7 @@ export default function Page() {
       <section className="card space-y-4">
         <h2 className="text-lg font-semibold text-white">Office & Manufacturing</h2>
         <div className="text-sm text-slate-200/90">
-          <p>Fastfun Remote · Dongguan, Guangdong, China</p>
+          <p>Fastfun Remote - Dongguan, Guangdong, China</p>
           <p className="mt-2">
             We ship globally and partner with accredited testing labs across North America, Europe, and APAC to streamline compliance.
           </p>
@@ -53,5 +53,6 @@ export default function Page() {
     </div>
   );
 }
+
 
 
