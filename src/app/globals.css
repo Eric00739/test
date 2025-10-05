@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f19;
+  --fg: #e6e8ee;
+  --muted: #94a3b8;
+  --brand: #0ea5e9;
+}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); }
+a { text-decoration: none; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+.btn { @apply inline-flex items-center px-5 py-3 rounded-2xl font-medium border border-slate-700 hover:border-slate-500; }
