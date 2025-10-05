@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && next export",
+    "build": "next build",
     "lint": "next lint",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
