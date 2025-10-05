@@ -103,15 +103,11 @@ export default function Page() {
                 </Link>
               </div>
             </div>
-            <ul className="grid gap-6 text-sm text-slate-200">
+            <ul className="grid gap-5 sm:grid-cols-3">
               {heroHighlights.map((item) => (
-                <li key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_25px_40px_-35px_rgba(14,165,233,0.6)]">
-                  <div className="text-xs uppercase tracking-[0.35em] text-white/60">
-                    {item.label}
-                  </div>
-                  <div className="mt-2 text-lg font-semibold text-white">
-                    {item.value}
-                  </div>
+                <li key={item.label} className="highlight-card">
+                  <div className="highlight-label">{item.label}</div>
+                  <div className="highlight-value">{item.value}</div>
                 </li>
               ))}
             </ul>
@@ -192,8 +188,3 @@ export default function Page() {
     </div>
   );
 }
-
-
-
-
-
